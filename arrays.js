@@ -71,3 +71,31 @@
 // let [var1, var2, ...myNewVarArrr] = arr1;
 // console.log(var1, var2, myNewVarArrr)
 
+
+
+
+// let arr = ["123456789"]
+// let newArr = [..."12345678"]
+// console.log(newArr)
+
+// let name = "meshv patel"
+// let letters = [...name]
+// console.log(letters)
+
+
+// split - string into array
+// join - array into string
+
+let name = 'my name is meshv patel'
+
+let words = name.split(" ")
+console.log(words)
+let abc = words.join(" ")
+console.log("abc", abc)
+
+let capWord  = words.map((item)=>{
+    return item.charAt(0).toUpperCase() + item.slice(1)
+})
+
+let newStr = capWord.join(' ')
+console.log(newStr)
