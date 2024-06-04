@@ -124,52 +124,77 @@
 // console.log(abc)
 
 // ---------- reduce method
-const arrr1 = [
-    {product:"mobile" , price: 500},
-    {product:"laptop" , price: 300},
-    {product:"tv" , price: 200},
-]
+// const arrr1 = [
+//     {product:"mobile" , price: 500},
+//     {product:"laptop" , price: 300},
+//     {product:"tv" , price: 200},
+// ]
 
-const totalPrice = arrr1.reduce((accmulator, currentValue) => {
-    return currentValue.price + accmulator
-} , 0) // here 0 is initial value for accumulator
-console.log(totalPrice) // 1000
+// const totalPrice = arrr1.reduce((accmulator, currentValue) => {
+//     return currentValue.price + accmulator
+// } , 0) // here 0 is initial value for accumulator
+// console.log(totalPrice) // 1000
 
 
 // ----------- sort method - sort based on ascii values
-const arr = [10,3,52,25]
-arr.sort()
-console.log(arr) // [ 10, 25, 3, 52 ]
+// const arr = [10,3,52,25]
+// arr.sort()
+// console.log(arr) // [ 10, 25, 3, 52 ]
 
-const arr2 = ["def" , "abc", "abb", "acb"]
-arr2.sort()
-console.log(arr2) // [ 'abb', 'abc', 'acb', 'def' ]
+// const arr2 = ["def" , "abc", "abb", "acb"]
+// arr2.sort()
+// console.log(arr2) // [ 'abb', 'abc', 'acb', 'def' ]
 
-const arr3 = ["a", "B" , "d" ,"E"]
-arr3.sort()
-console.log(arr3) // [ 'B', 'E', 'a', 'd' ]
+// const arr3 = ["a", "B" , "d" ,"E"]
+// arr3.sort()
+// console.log(arr3) // [ 'B', 'E', 'a', 'd' ]
 
-const arr4 = [ true , false , true , 20 , "hello"]
-arr4.sort()
-console.log(arr4) // [ 20, false, 'hello', true, true ]
+// const arr4 = [ true , false , true , 20 , "hello"]
+// arr4.sort()
+// console.log(arr4) // [ 20, false, 'hello', true, true ]
 
-// sort integers using sort method
-const arr5 = [5000 , 2 , 350 , 10, 25];
-arr5.sort((a,b) => {
-    return a-b
-})
-console.log(arr5) // [ 2, 10, 25, 350, 5000 ]
+// // sort integers using sort method
+// const arr5 = [5000 , 2 , 350 , 10, 25];
+// arr5.sort((a,b) => {
+//     return a-b
+// })
+// console.log(arr5) // [ 2, 10, 25, 350, 5000 ]
 
 
 // find method
-const users = [
-    { userId: 1, userName: "Meshv"},
-    { userId: 2, userName: "Mihir"},
-    { userId: 3, userName: "Hetsi"},
-    { userId: 4, userName: "Mit"},
-]
+// const users = [
+//     { userId: 1, userName: "Meshv"},
+//     { userId: 2, userName: "Mihir"},
+//     { userId: 3, userName: "Hetsi"},
+//     { userId: 4, userName: "Mit"},
+// ]
 
-const myUser = users.find((item) => {
-    return item.userName === "Hetsi"
-})
-console.log(myUser) // { userId: 3, userName: 'Hetsi' }  return only first object it finds
+// const myUser = users.find((item) => {
+//     return item.userName === "Hetsi"
+// })
+// console.log(myUser) // { userId: 3, userName: 'Hetsi' }  return only first object it finds
+
+
+// // fill method in array - to create array with any value
+// const myArr = new Array(9).fill(null)
+// console.log(myArr)
+
+// const numbers = [1,2,3,4,5,6]
+// // fill(fillvalue , startindex, endindex)
+// numbers.fill(-1 , 2 , 5)
+// console.log(numbers) // [ 1, 2, -1, -1, -1, 6 ]
+
+// splice method
+// splice(index , noOfItem , insertItem)
+// const items = ['itm1' , 'itm2', 'itm3', 'itm4'];
+ //delete
+//  const deletedItem = items.splice(1,1)
+//  console.log(deletedItem) // [ 'itm2' ]
+//  console.log(items) // [ 'itm1', 'itm3' ]
+ // insert
+// items.splice(1,0, "insertedItem")
+// console.log(items) // [ 'itm1', 'insertedItem', 'itm2', 'itm3' ]
+// delete and insert
+// const deletedItem = items.splice(1 , 2 , "inserted1" , "inserted2")
+// console.log(items) // [ 'itm1', 'inserted1', 'inserted2', 'itm4' ]
+// console.log(deletedItem) // [ 'itm2', 'itm3' ]
