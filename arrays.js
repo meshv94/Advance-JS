@@ -86,16 +86,90 @@
 // split - string into array
 // join - array into string
 
-let name = 'my name is meshv patel'
+// let name = 'my name is meshv patel'
 
-let words = name.split(" ")
-console.log(words)
-let abc = words.join(" ")
-console.log("abc", abc)
+// let words = name.split(" ")
+// console.log(words)
+// let abc = words.join(" ")
+// console.log("abc", abc)
 
-let capWord  = words.map((item)=>{
-    return item.charAt(0).toUpperCase() + item.slice(1)
+// let capWord  = words.map((item)=>{
+//     return item.charAt(0).toUpperCase() + item.slice(1)
+// })
+
+// let newStr = capWord.join(' ')
+// console.log(newStr)
+
+
+//----------    map and foreach
+// const arr = [1,2,3,4,5]
+
+// const fech = arr.forEach((item,index) => {
+//     return item
+// })
+// console.log(fech)  // undefined
+
+// const mpp = arr.map((item,index) => {
+//     return item
+// })
+// console.log(mpp) // [ 1, 2, 3, 4, 5 ]
+
+// ----------- filter method
+// const arr = [1,2,3,4,5];
+
+// const abc = arr.filter((item,index) => {
+//     // console.log(item, index)
+//     return true
+// })
+// console.log(abc)
+
+// ---------- reduce method
+const arrr1 = [
+    {product:"mobile" , price: 500},
+    {product:"laptop" , price: 300},
+    {product:"tv" , price: 200},
+]
+
+const totalPrice = arrr1.reduce((accmulator, currentValue) => {
+    return currentValue.price + accmulator
+} , 0) // here 0 is initial value for accumulator
+console.log(totalPrice) // 1000
+
+
+// ----------- sort method - sort based on ascii values
+const arr = [10,3,52,25]
+arr.sort()
+console.log(arr) // [ 10, 25, 3, 52 ]
+
+const arr2 = ["def" , "abc", "abb", "acb"]
+arr2.sort()
+console.log(arr2) // [ 'abb', 'abc', 'acb', 'def' ]
+
+const arr3 = ["a", "B" , "d" ,"E"]
+arr3.sort()
+console.log(arr3) // [ 'B', 'E', 'a', 'd' ]
+
+const arr4 = [ true , false , true , 20 , "hello"]
+arr4.sort()
+console.log(arr4) // [ 20, false, 'hello', true, true ]
+
+// sort integers using sort method
+const arr5 = [5000 , 2 , 350 , 10, 25];
+arr5.sort((a,b) => {
+    return a-b
 })
+console.log(arr5) // [ 2, 10, 25, 350, 5000 ]
 
-let newStr = capWord.join(' ')
-console.log(newStr)
+
+// find method
+const users = [
+    { userId: 1, userName: "Meshv"},
+    { userId: 2, userName: "Mihir"},
+    { userId: 3, userName: "Hetsi"},
+    { userId: 4, userName: "Mit"},
+]
+
+const myUser = users.find((item) => {
+    return item.userName === "Hetsi"
+})
+console.log(myUser) // { userId: 3, userName: 'Hetsi' }  return only first object it finds
