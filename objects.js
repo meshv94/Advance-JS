@@ -1,10 +1,10 @@
 // objects are reference type
 
-const person = {
-    name: "Meshv",
-    age: 21,
-    "person hobbies": ["sleep, eat, code"]
-}
+// const person = {
+//     name: "Meshv",
+//     age: 21,
+//     "person hobbies": ["sleep, eat, code"]
+// }
 
 // console.log(typeof person)
 
@@ -113,27 +113,39 @@ const person = {
 // console.log("aa" , aa , " bb ", bb)
 
 
-const users = [
-    {
-        name:"meshv",
-        age:20,
-        gender:"male"
-    },
-    {
-        name:"mihir",
-        age:21,
-        gender:"male"
-    },
-    {
-        name:"taksh",
-        age:22,
-        gender:"male"
-    },
-]
+// const users = [
+//     {
+//         name:"meshv",
+//         age:20,
+//         gender:"male"
+//     },
+//     {
+//         name:"mihir",
+//         age:21,
+//         gender:"male"
+//     },
+//     {
+//         name:"taksh",
+//         age:22,
+//         gender:"male"
+//     },
+// ]
 
-const [user1 , user2, user3] = users;
-console.log(user1 , user2, user3) // { name: 'meshv', age: 20, gender: 'male' } { name: 'mihir', age: 21, gender: 'male' } { name: 'taksh', age: 22, gender: 'male' }
+// const [user1 , user2, user3] = users;
+// console.log(user1 , user2, user3) // { name: 'meshv', age: 20, gender: 'male' } { name: 'mihir', age: 21, gender: 'male' } { name: 'taksh', age: 22, gender: 'male' }
 
 
-const [{name: a1} , , {age: a2}] = users
-console.log(a1 , a2) // meshv 22
+// const [{name: a1} , , {age: a2}] = users
+// console.log(a1 , a2) // meshv 22
+
+
+const user = {
+    name : "meshv",
+    age : 20
+}
+
+console.log(user?.name)
+console.log(user?.email)
+console.log(user?.email?.id)
+// console.log(person?.name)
+console.log(this)
