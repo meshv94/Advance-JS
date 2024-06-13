@@ -62,5 +62,6 @@ createUsers.prototype.info = function(){
 
 const user2 = createUsers("meshv" , 18)
 console.log(user1)
+console.log(user2)
 console.log(user1.info())
 
